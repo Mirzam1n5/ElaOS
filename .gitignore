@@ -1,0 +1,33 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+build/
+dist/
+iso_root/
+*.iso
+
+# Compiled output
+*.elf
+*.bin
+*.img
+
+# Debug symbols
+*.dSYM/
+*.dwarf
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
