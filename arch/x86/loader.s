@@ -13,11 +13,8 @@ align 4
     dd CHECKSUM
 
 loader:
-    mov esp, kernel_stack + KERNEL_STACK_SIZE
-    call kmain
     mov eax, 0xCAFEBABE
 .loop:
-    hlt
     jmp .loop
 
 
