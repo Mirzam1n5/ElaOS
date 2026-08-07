@@ -17,7 +17,7 @@ void fb_write_cell(unsigned int i, char c, unsigned char fg, unsigned char bg) {
 }
 
 void fb_write_cell_at(unsigned int row, unsigned int column, char c, unsigned char fg, unsigned char bg) {
-    unsigned int index = row * 160 + column * 2;
+    unsigned int index = (row * FB_COLUMNS * FB_CELL_SIZE + column) * FB_CELL_SIZE;
     fb_write_cell(index, c, fg, bg);
 }
 
